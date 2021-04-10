@@ -3,9 +3,8 @@
 ## 사용법
 school.School()
 * region - 지역
-* id - 나이스 학교ID
-
-**반환값 SCHOOL**
+* id - 나이스 학교ID<br/>
+반환값 : SCHOOL
 
 SCHOOL.getMeal()
 * year : 년
