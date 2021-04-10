@@ -1,4 +1,4 @@
-# School-Meal
+# 🍚 School-Meal
 파이썬으로 작성된 급식정보 모듈입니다.
 ## 사용법
 school.School()
