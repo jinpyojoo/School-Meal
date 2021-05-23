@@ -2,8 +2,8 @@
 파이썬으로 작성된 급식정보 모듈입니다.
 ## 사용법
 school.School()
-* region - 지역
-* id - 나이스 학교ID<br/>
+* *region - 지역
+* *id - 나이스 학교ID<br/>
 반환값 - SCHOOL object
 
 SCHOOL.getMeal()
