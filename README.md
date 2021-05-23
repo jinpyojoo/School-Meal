@@ -20,8 +20,9 @@ school.getSchool()
 ```
 {'sqlAction': '', 'orgCode': 'D100000851', 'kraOrgNm': '성광중학교', 'zipAdres': '대구광역시 북구 복현동', 'schulKndScCode': '03', 'atptOfcdcNm': '대구광역시교육청', 'atptOfcdcOrgCode': 'D100000001', 'schulCrseScCode': '3', 'schulCrseScCodeNm': '중학교'}
 ```
+School 함수에 사용되는 id는 `orgCode` 입니다.
 
-**본인이 사용중인 Chrome 버전에 따라 필요한 chromedriver.exe 파일의 (버전)[https://chromedriver.chromium.org/downloads]이 달라 오류가 발생할 수 있습니다.**
+**본인이 사용중인 Chrome 버전에 따라 필요한 chromedriver.exe 파일의 [버전](https://chromedriver.chromium.org/downloads)이 달라 오류가 발생할 수 있습니다.**
 
 ## 체크리스트
 * [x] 급식정보 불러오기
