@@ -1,5 +1,5 @@
-# 🍚 School-Meal
-파이썬으로 작성된 급식정보 모듈입니다.
+# \_school.py
+파이썬으로 작성된 학교정보 모듈입니다.
 ## 사용법
 school.School()
 * *region - 지역
