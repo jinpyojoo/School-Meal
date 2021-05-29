@@ -1,4 +1,4 @@
-# \_school.py
+# school.py
 파이썬으로 작성된 학교정보 모듈입니다.
 ## 사용법
 school.School()
