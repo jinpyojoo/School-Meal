@@ -1,5 +1,4 @@
-from school import School
+import school
 
-code = School.getSchool('dge', '성광중')
-print(School(region='dge', id=code['orgCode']).getMeal(year=2021, month=5, day=24))
-print(code)
+schoolData = school.getSchool(name="성광중학교",region="dge", beautify=True)[0]
+print(school.School(region='dge', code=schoolData['code']).getMeal())
