@@ -17,13 +17,22 @@ class School:
         day = str(day).zfill(2)
         if self.region in ["sen", "pen", "dge", "ice", "gen", "dje", "use", "sje", "goe", "kwe", "cbe", "cne", "jbe", "jne", "gbe", "gne", "jje"]:
             num = weekday + 1
-            URL = (
-                    "http://stu."+self.region+".go.kr/sts_sci_md01_001.do?"
-                    f"schulCode={self.code}"
-                    "&schulCrseScCode=4"
-                    "&schulKndScCode=04"
-                    "&schMmealScCode=%d&schYmd=%s" % (schMmealScCode, str(year)+str(month)+str(day))
-                )
+            if not self.region == 'gbe':
+                URL = (
+                        "http://stu."+self.region+".go.kr/sts_sci_md01_001.do?"
+                        f"schulCode={self.code}"
+                        "&schulCrseScCode=4"
+                        "&schulKndScCode=04"
+                        "&schMmealScCode=%d&schYmd=%s" % (schMmealScCode, str(year)+str(month)+str(day))
+                    )
+            else:
+                URL = (
+                        "http://stu.gbe.kr/sts_sci_md01_001.do?"
+                        f"schulCode={self.code}"
+                        "&schulCrseScCode=4"
+                        "&schulKndScCode=04"
+                        "&schMmealScCode=%d&schYmd=%s" % (schMmealScCode, str(year)+str(month)+str(day))
+                    )
             html = ""
             resp = requests.get(URL)
             if resp.status_code == 200 :

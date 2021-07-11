@@ -1,4 +1,4 @@
 import school
 
-schoolData = school.getSchool(name="성광중학교",region="dge", beautify=True)[0]
-print(school.School(region='dge', code=schoolData['code']).getMeal())
+schoolData = school.getSchool(name="성광중",region="dge")[0]
+print(school.School(code=schoolData, region="dge").getMeal())

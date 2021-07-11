@@ -1,10 +1,16 @@
 import requests, json
-def getSchool(region, name, beautify=False):
+def getSchool(region, name, beautify=True):
     if region in ["sen", "pen", "dge", "ice", "gen", "dje", "use", "sje", "goe", "kwe", "cbe", "cne", "jbe", "jne", "gbe", "gne", "jje"]:
-        url = (
-            "http://par."+region+".go.kr/spr_ccm_cm01_100.do?"
-            "kraOrgNm="+name
-        )
+        if not region == 'gbe':
+            url = (
+                "http://par."+region+".go.kr/spr_ccm_cm01_100.do?"
+                "kraOrgNm="+name
+            )
+        else:
+            url = (
+                "http://par.gbe.kr/spr_ccm_cm01_100.do?"
+                "kraOrgNm="+name
+            )
         temp = json.loads(requests.get(url).text)
         if not beautify:
             return temp['resultSVO']['orgDVOList']
